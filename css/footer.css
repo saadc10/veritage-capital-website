@@ -6,16 +6,16 @@ footer {
 
 .footer-content {
     max-width: 960px;
-    margin: 0 auto;  /* Center the content horizontally */
-    padding: 0 0.5rem; /* Add padding here to match previous style */
-    display: flex; /* Use Flexbox for alignment */
-    align-items: center;  /* Vertically center items */
-    justify-content: center; /* Horizontally center items */
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p { 
     color: #f6edff; 
-    margin: 0;  /* Remove default margin for better alignment */
+    margin: 0;
 }
 
 .linkedin-icon {
