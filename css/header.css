@@ -1,5 +1,5 @@
 header {
-    background-color: #1A1A1A; 
+    background-color: #282828; 
     padding: 0.75rem 0;
     width: 100%; 
 }
@@ -31,8 +31,8 @@ nav li {
 
 nav a {
     display: inline-block; 
-    color: #1A1A1A;  
-    background-color: #FFFFFF;
+    color: #F6EDFF;  
+    background-color: #1F1F1F;
     padding: 0.6rem 1rem; 
     border-radius: 25px; 
     text-decoration: none;

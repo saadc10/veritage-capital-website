@@ -1,5 +1,5 @@
 footer {
-    background-color: #1A1A1A;
+    background-color: #282828;
     padding: 0.5rem 0;  
     width: 100%; 
 }
@@ -14,7 +14,7 @@ footer {
 }
 
 footer p { 
-    color: #FFFFFF; 
+    color: #F6EDFF; 
     margin: 0;
 }
 
