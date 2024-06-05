@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000000;
+    margin: 0; /* Remove default body margins */
+}
+
+header, footer {
+    background-color: #100d28; /* Dark purple */
+    padding: 1rem 0;
+    width: 100%; /* Full width */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0.75rem auto; /* Approximately 0.75-inch margins */
+    padding: 1.5rem;  /* Adjust padding to your preference */
+}
+
+footer p { 
+    color: #fff; /* White text for the footer */
+}
+
+.footer-content p {
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
