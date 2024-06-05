@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.error-container {
+    text-align: center;
+}
+
+.error-container h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.error-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.error-container a {
+    color: #0058aa;
+    text-decoration: none;
+}
+
+.error-container a:hover {
+    text-decoration: underline;
+}
