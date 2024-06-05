@@ -33,7 +33,7 @@ nav a {
     display: inline-block; 
     color: #000;  
     background-color: #f6edff;
-    padding: 0.8rem 1.5rem; 
+    padding: 0.6rem 1rem; 
     border-radius: 25px; 
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease; 

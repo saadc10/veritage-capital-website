@@ -1,0 +1,47 @@
+/* Contact Form Styles (contact.css) */
+#contact-form {
+    display: grid; /* Makes items in a grid format*/
+    grid-template-columns: 1fr; /* Creates a single column*/
+}
+#contact-form label { /* Makes lables bold */
+    font-weight: bold;
+}
+
+/* Style for name and email inputs (half-width) */
+#contact-form input[name="name"],
+#contact-form input[name="email"] {
+    width: calc(50% - 0.5rem); /* half width, minus half the gap */
+    box-sizing: border-box; 
+    display: inline-block; /* To allow them to sit side by side */
+}
+
+/* Style for subject and message inputs (full-width) */
+#contact-form input[name="subject"],
+#contact-form textarea {
+    /*grid-column: span 2; */
+    width: 100%; /* Takes the full width as one column grid*/
+    box-sizing: border-box; 
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Disable resizing for all input fields and textarea */
+}
+
+#contact-form textarea {
+    height: 150px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+#contact-form button {
+    background-color: #100d28;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
