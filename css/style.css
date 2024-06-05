@@ -16,18 +16,14 @@ h1, h2, h3 {
     font-weight: bold;
     margin-bottom: 1rem;
     color: #d9b5ff;
-}
-
-/* Example for H1 */
-h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 a {
-    color: #0058aa; /* Or your preferred link color */
+    color: #0058aa;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; /* Add an underline on hover */
+    text-decoration: underline;
 }

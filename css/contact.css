@@ -1,25 +1,21 @@
-/* Contact Form Styles (contact.css) */
 #contact-form {
-    display: grid; /* Makes items in a grid format*/
-    grid-template-columns: 1fr; /* Creates a single column*/
+    display: grid;
+    grid-template-columns: 1fr;
 }
-#contact-form label { /* Makes lables bold */
+#contact-form label {
     font-weight: bold;
 }
 
-/* Style for name and email inputs (half-width) */
 #contact-form input[name="name"],
 #contact-form input[name="email"] {
-    width: calc(50% - 0.5rem); /* half width, minus half the gap */
+    width: calc(50% - 0.5rem);
     box-sizing: border-box; 
-    display: inline-block; /* To allow them to sit side by side */
+    display: inline-block;
 }
 
-/* Style for subject and message inputs (full-width) */
 #contact-form input[name="subject"],
 #contact-form textarea {
-    /*grid-column: span 2; */
-    width: 100%; /* Takes the full width as one column grid*/
+    width: 100%;
     box-sizing: border-box; 
 }
 
@@ -29,19 +25,19 @@
     margin-bottom: 1rem;
     border: 1px solid #282828;
     border-radius: 5px;
-    resize: none; /* Disable resizing for all input fields and textarea */
+    resize: none;
 }
 
 #contact-form textarea {
-    height: 150px; /* Set a fixed height */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    height: 150px;
+    overflow-y: auto;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-    outline: none; /* Remove default outline */
-    border-color: #d9b5ff; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(16, 13, 40, 0.3); /* Add subtle shadow */
+    outline: none;
+    border-color: #d9b5ff;
+    box-shadow: 0 0 5px rgba(16, 13, 40, 0.3);
 }
 
 #contact-form button {
@@ -55,6 +51,6 @@
 
 #contact-form button:hover {
     transform: translateY(-3px); 
-    background-color: #1F1F1F; /* Slightly darker shade on hover */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    background-color: #1F1F1F;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
