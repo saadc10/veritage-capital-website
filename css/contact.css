@@ -37,6 +37,13 @@
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none; /* Remove default outline */
+    border-color: #d9b5ff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(16, 13, 40, 0.3); /* Add subtle shadow */
+}
+
 #contact-form button {
     background-color: #282828;
     color: white;
@@ -44,4 +51,10 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#contact-form button:hover {
+    transform: translateY(-3px); 
+    background-color: #1F1F1F; /* Slightly darker shade on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }

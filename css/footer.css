@@ -14,13 +14,19 @@ footer {
 }
 
 footer p { 
-    color: #F6EDFF; 
+    color: #FFFFFF; 
     margin: 0;
 }
 
 .linkedin-icon {
-    width: 36px; 
-    height: 36px;
+    width: 20px; 
+    height: 20px;
     vertical-align: middle;
-    margin-top: -4px
+    margin-top: -4px;
+    margin-left: 4px;
+}
+
+.linkedin-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
