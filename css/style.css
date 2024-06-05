@@ -2,23 +2,30 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     color: #000000;
-    margin: 0; /* Remove default body margins */
+    margin: 0; 
 }
 
-header, footer {
-    background-color: #100d28; /* Dark purple */
-    padding: 1rem 0;
-    width: 100%; /* Full width */
+header {
+    background-color: #100d28; 
+    padding: 1rem 0; /* Maintain padding for header */
+    width: 100%; 
+}
+
+/* Adjusted footer padding */
+footer {
+    background-color: #100d28; 
+    padding: 0.5rem 0;  
+    width: 100%; 
 }
 
 .container {
     max-width: 960px;
-    margin: 0.75rem auto; /* Approximately 0.75-inch margins */
-    padding: 1.5rem;  /* Adjust padding to your preference */
+    margin: 0.75rem auto; 
+    padding: 1.5rem;  
 }
 
 footer p { 
-    color: #fff; /* White text for the footer */
+    color: #fff; 
 }
 
 .footer-content p {
@@ -34,32 +41,32 @@ footer p {
 }
 
 .logo {
-    max-width: 150px; /* Adjust as needed */
+    max-width: 150px; 
     height: auto;
 }
 
 nav ul {
-    list-style: none; /* Remove list styling */
+    list-style: none; 
     margin: 0;
     padding: 0;
-    display: flex; /* Arrange buttons horizontally */
+    display: flex; 
 }
 
 nav li {
-    margin: 0 10px; /* Add spacing between buttons */
+    margin: 0 10px; 
 }
 
 nav a {
-    display: inline-block; /* Make links act like blocks */
-    color: #000;  /* Black text color */
-    background-color: #fff; /* White background */
-    padding: 0.8rem 1.5rem; /* Adjust padding to create bubble size */
-    border-radius: 25px; /* Create rounded corners for the bubble shape */
+    display: inline-block; 
+    color: #000;  
+    background-color: #fff;
+    padding: 0.8rem 1.5rem; 
+    border-radius: 25px; 
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover transition */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
 
 nav a:hover {
-    transform: translateY(-3px); /* Move slightly up on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
