@@ -1,4 +1,3 @@
-/* Footer Styles */
 footer {
     background-color: #100d28;
     padding: 0.5rem 0;  
@@ -9,9 +8,19 @@ footer {
     max-width: 960px;
     margin: 0 auto;  /* Center the content horizontally */
     padding: 0 0.5rem; /* Add padding here to match previous style */
+    display: flex; /* Use Flexbox for alignment */
+    align-items: center;  /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
 }
 
 footer p { 
     color: #f6edff; 
-    text-align: center; /* Center the text in the footer */
+    margin: 0;  /* Remove default margin for better alignment */
+}
+
+.linkedin-icon {
+    width: 36px; 
+    height: 36px;
+    vertical-align: middle;
+    margin-top: -4px
 }
