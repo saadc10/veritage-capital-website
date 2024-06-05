@@ -39,17 +39,27 @@ footer p {
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove list styling */
     margin: 0;
     padding: 0;
+    display: flex; /* Arrange buttons horizontally */
 }
 
 nav li {
-    display: inline;
-    margin-right: 2rem;
+    margin: 0 10px; /* Add spacing between buttons */
 }
 
 nav a {
-    color: #fff;
+    display: inline-block; /* Make links act like blocks */
+    color: #000;  /* Black text color */
+    background-color: #fff; /* White background */
+    padding: 0.8rem 1.5rem; /* Adjust padding to create bubble size */
+    border-radius: 25px; /* Create rounded corners for the bubble shape */
     text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover transition */
+}
+
+nav a:hover {
+    transform: translateY(-3px); /* Move slightly up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
 }
