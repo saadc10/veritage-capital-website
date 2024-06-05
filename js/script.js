@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch(file)
       .then(response => {
         if (!response.ok) {
-          throw new Error(`Network response was not ok for ${file}: ${response.status}`);
+          return Promise.reject(new Error(`Network response was not ok for ${file}: ${response.status}`));
         }
         return response.text();
       })
