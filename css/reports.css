@@ -8,13 +8,14 @@
   .report {
     text-align: center;
   }
+
   .report img {
     max-width: 75%;
     height: auto;
     margin-bottom: 0.5rem;
   }
   
-  .report h3 {
+  .report h2 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: bold;
