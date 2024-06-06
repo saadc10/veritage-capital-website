@@ -1,8 +1,10 @@
 /* Styles for the header */
 header {
-    background-color: #282828; 
+    background-color: #282828;
     padding: 0.75rem 0;
-    width: 100%; 
+    width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .header-content {
@@ -20,7 +22,7 @@ header {
 }
 
 nav ul {
-    list-style: none; 
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
@@ -28,17 +30,17 @@ nav ul {
 }
 
 nav a {
-    display: inline-block; 
-    color: #FFFFFF;  
+    display: inline-block;
+    color: #FFFFFF;
     background-color: #1F1F1F;
-    padding: 0.6rem 1rem; 
-    border-radius: 25px; 
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 nav a:hover {
-    transform: translateY(-3px); 
+    transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-decoration: none;
 }
@@ -71,38 +73,51 @@ nav a:hover {
         position: fixed;
         top: 0;
         left: 0;
-        height: 100%;
         background-color: rgba(40, 40, 40, 0.95);
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         z-index: 1000;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
     }
 
     nav.active {
         display: flex;
+        opacity: 1;
+        max-height: 300px; /* Adjust height as necessary */
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
+        padding: 1rem 0;
     }
 
     nav ul li {
         width: 100%;
-        text-align: center;
-        margin: 20px 0;
+        text-align: left;
+        margin: 0;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
     }
 
     nav ul li a {
         display: block;
         width: 100%;
-        padding: 1rem 0;
+        padding: 1rem;
         background-color: transparent;
         border-radius: 0;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: #FFFFFF;
         text-decoration: none;
+        transition: background-color 0.3s ease;
     }
 
     nav ul li a:hover {

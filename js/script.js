@@ -27,19 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Nav Menu:', navMenu);
 
     if (hamburger && navMenu) {
-      // Remove any existing event listeners to prevent duplication
-      hamburger.removeEventListener('click', toggleNavMenu);
+      hamburger.addEventListener('click', (event) => {
+        event.stopPropagation();
+        console.log('Hamburger clicked');
+        navMenu.classList.toggle('active');
+      });
 
-      // Add a single event listener
-      hamburger.addEventListener('click', toggleNavMenu);
-    }
-  };
-
-  const toggleNavMenu = () => {
-    const navMenu = document.getElementById('nav-menu');
-    if (navMenu) {
-      console.log('Hamburger clicked');
-      navMenu.classList.toggle('active');
+      // Add event listener to close the menu when clicking outside
+      document.addEventListener('click', (event) => {
+        if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+          navMenu.classList.remove('active');
+        }
+      });
     }
   };
 
