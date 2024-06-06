@@ -1,30 +1,63 @@
+/* Grid layout */
 .report-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    justify-content: center;
-  }
-
-  .report {
-    text-align: center;
-  }
-
-  .report:hover img {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(193, 160, 201, 0.5);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 2rem;
+  justify-content: center; 
 }
 
-  .report img {
-    max-width: 75%;
-    height: auto;
-    margin-bottom: 0.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+/* Card styles */
+.report {
+  background-color: #282828; /* Darker background for cards */
+  border-radius: 8px;        /* Rounded corners */
+  overflow: hidden;         /* Hide overflowing content (for shadow effect) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+}
+
+.report:hover {
+  transform: translateY(-5px); /* Elevate on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow */
+}
+
+.report a { /* Make the entire card clickable */
+  display: block; /* Allows the link to fill the entire card */
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+.report img {
+  width: 100%; 
+  height: 150px; /* Set a fixed height for image */
+  object-fit: cover; /* Cover the container, crop if necessary */
+}
+
+.report-content { /* Container for text content */
+  padding: 1rem;
+}
+
+.report h2 {
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 1.2rem;  /* Slightly increase font size */
+  margin-bottom: 0.25rem;
+}
+
+.report p {
+  margin-bottom: 0;
+  color: #FFFFFF; /* Set text color to white */
+  margin-top: 0;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .report-grid {
+      grid-template-columns: repeat(2, 1fr); 
   }
-  
-  .report h2 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #d9b5ff;
+}
+
+@media (max-width: 480px) {
+  .report-grid {
+      grid-template-columns: 1fr;
   }
+}

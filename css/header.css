@@ -38,6 +38,6 @@ nav a {
 
 nav a:hover {
     transform: translateY(-3px); 
-    box-shadow: 0 4px 8px rgba(94, 80, 97, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-decoration: none;
 }
