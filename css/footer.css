@@ -19,7 +19,7 @@ footer p {
     text-align: center;
 }
 
-.linkedin-icon {
+.linkedin {
     width: 20px; 
     height: 20px;
     vertical-align: middle;
@@ -28,7 +28,7 @@ footer p {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.linkedin-icon:hover {
+.linkedin:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
