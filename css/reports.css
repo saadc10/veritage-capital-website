@@ -1,0 +1,23 @@
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 1.5rem; /* Adjust the gap as needed */
+  }
+  
+  /* Style for each report box */
+  .report {
+    text-align: center; /* Align text in the center */
+  }
+  .report img {
+    max-width: 75%; /* Allow images to scale responsively */
+    height: auto;     /* Maintain aspect ratio */
+    margin-bottom: 0.5rem; /* Add space below the image */
+  }
+  
+  .report h3 { /* Changed from h3 to h4 */
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;  /* Slightly larger than normal text */
+    color: #d9b5ff;    /* Pink color */
+  }
