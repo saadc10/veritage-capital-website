@@ -1,8 +1,8 @@
 /* Styles for the header */
 header {
-    background-color: #282828;
+    background-color: #282828; 
     padding: 0.75rem 0;
-    width: 100%;
+    width: 100%; 
     position: relative;
     z-index: 10;
 }
@@ -13,16 +13,17 @@ header {
     align-items: center;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 0.5rem;
+    padding: 0 1.5rem;
 }
 
 .logo {
     max-width: 150px;
     height: auto;
+    margin-top: 10px;
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -30,13 +31,14 @@ nav ul {
 }
 
 nav a {
-    display: inline-block;
-    color: #FFFFFF;
+    display: inline-block; 
+    color: #FFFFFF;  
     background-color: #1F1F1F;
-    padding: 0.6rem 1rem;
-    border-radius: 25px;
+    padding: 0.4rem 0.8rem; /* Reduced padding */
+    border-radius: 15px; /* Slightly less rounded corners */
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    font-size: 0.9rem; /* Slightly smaller font size */
 }
 
 nav a:hover {
@@ -45,19 +47,42 @@ nav a:hover {
     text-decoration: none;
 }
 
+/* Focus styles for accessibility */
+nav a:focus {
+    outline: 2px solid #FFFFFF;
+}
+
 /* Styles for the hamburger menu */
+.nav-toggle {
+    display: none; /* Hide the checkbox by default */
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    gap: 5px;
+    gap: 4px; /* Slightly reduced gap */
+    transition: all 0.3s ease;
 }
 
 .hamburger span {
     width: 25px;
-    height: 3px;
+    height: 2px; /* Reduced height */
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 2px; /* Slightly less rounded */
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 3.5px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -3.5px);
 }
 
 /* Mobile Styles */
@@ -71,7 +96,7 @@ nav a:hover {
         flex-direction: column;
         width: 100%;
         position: fixed;
-        top: 0;
+        top: 60px; /* Adjust this to match the height of your header */
         left: 0;
         background-color: rgba(40, 40, 40, 0.95);
         justify-content: flex-start;
@@ -86,21 +111,21 @@ nav a:hover {
     nav.active {
         display: flex;
         opacity: 1;
-        max-height: 300px; /* Adjust height as necessary */
+        max-height: 145px; /* Reduced max height */
     }
 
     nav ul {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        padding: 1rem 0;
+        padding: 0.5rem 0; /* Reduced padding */
     }
 
     nav ul li {
         width: 100%;
         text-align: left;
         margin: 0;
-        padding: 0.5rem 1rem;
+        padding: 0.3rem 1rem; /* Reduced padding */
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
@@ -111,10 +136,10 @@ nav a:hover {
     nav ul li a {
         display: block;
         width: 100%;
-        padding: 1rem;
+        padding: 0.8rem; /* Reduced padding */
         background-color: transparent;
         border-radius: 0;
-        font-size: 1.2rem;
+        font-size: 1rem; /* Slightly smaller font size */
         color: #FFFFFF;
         text-decoration: none;
         transition: background-color 0.3s ease;
@@ -122,5 +147,10 @@ nav a:hover {
 
     nav ul li a:hover {
         background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Focus styles for accessibility */
+    nav ul li a:focus {
+        outline: 2px solid #FFFFFF;
     }
 }

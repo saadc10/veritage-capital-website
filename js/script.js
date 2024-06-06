@@ -19,30 +19,30 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   };
 
-  const setupHamburgerMenu = () => {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
+  // Previous code
 
-    console.log('Hamburger:', hamburger);
-    console.log('Nav Menu:', navMenu);
+// Set up the hamburger menu after the header is loaded
+const setupHamburgerMenu = () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.getElementById('nav-menu');
 
-    if (hamburger && navMenu) {
-      hamburger.addEventListener('click', (event) => {
-        event.stopPropagation();
-        console.log('Hamburger clicked');
-        navMenu.classList.toggle('active');
-      });
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('open'); // Toggle the hamburger menu's appearance
 
-      // Add event listener to close the menu when clicking outside
-      document.addEventListener('click', (event) => {
-        if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
-          navMenu.classList.remove('active');
-        }
-      });
-    }
-  };
+      // Adjust the max-height of the menu when it is toggled
+      if (navMenu.classList.contains('active')) {
+        navMenu.style.maxHeight = navMenu.scrollHeight + 'px';
+      } else {
+        navMenu.style.maxHeight = '0';
+      }
+    });
+  }
+};
 
-  // Include header and footer
-  includeHTML('header', 'header.html');
-  includeHTML('footer', 'footer.html');
+// Include header and footer
+includeHTML('header', 'header.html');
+includeHTML('footer', 'footer.html').then(() => setupHamburgerMenu()); 
+
 });
