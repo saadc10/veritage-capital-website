@@ -38,7 +38,7 @@ nav a {
     border-radius: 15px; /* Slightly less rounded corners */
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease; 
-    font-size: 0.9rem; /* Slightly smaller font size */
+    font-size: 0.95rem; /* Slightly smaller font size */
 }
 
 nav a:hover {
@@ -49,7 +49,7 @@ nav a:hover {
 
 /* Focus styles for accessibility */
 nav a:focus {
-    outline: 2px solid #FFFFFF;
+    outline: 2px solid #776a85;
 }
 
 /* Styles for the hamburger menu */
