@@ -2,7 +2,7 @@
 
 This is the website for Veritage Capital, a student-run investment fund. It showcases the fund's mission, investment philosophy, and a selection of its reports.
 
-**Live Website:** You can view the live website at [https://saadc10.github.io/VeritageCapital/](https://saadc10.github.io/VeritageCapital/)
+**Live Website:** You can view the live website at [https://saadc10.github.io/veritage-capital-website/](https://saadc10.github.io/veritage-capital-website/)
 
 ## Features
 
@@ -25,7 +25,7 @@ This is the website for Veritage Capital, a student-run investment fund. It show
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/Saadc10/VeritageCapital.git](https://github.com/Saadc10/VeritageCapital.git)
+    git clone https://github.com/saadc10/veritage-capital-website.git
     ```
 2.  **Install Live Server (Optional):**
     ```bash
