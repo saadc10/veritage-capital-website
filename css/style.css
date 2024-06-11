@@ -20,3 +20,12 @@ main {
     max-width: 100%;
     padding: 0 25%;
 }
+
+a {
+    color: #0058aa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
