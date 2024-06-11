@@ -24,4 +24,15 @@ document.addEventListener("DOMContentLoaded", function() {
           submissionMessage.style.display = 'block';
       });
   }
+
+  function setupNewsletterForm() {
+    const form = document.getElementById('contact-form');
+    const submissionMessage = document.getElementById('message-sent');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        form.style.display = 'none';
+        submissionMessage.style.display = 'block';
+    });
+}
 });
