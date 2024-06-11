@@ -1,12 +1,12 @@
 .report-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 2.5rem;
   justify-content: center; 
 }
 
 .report {
-  background-color: #282828;
+  background-color: #ddd;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -36,14 +36,14 @@
 
 .report h2 {
   margin-top: 0;
-  color: #ffffff;
+  color: #333;
   font-size: 1.2rem;
   margin-bottom: 0.25rem;
 }
 
 .report p {
   margin-bottom: 0;
-  color: #FFFFFF;
+  color: #333;
   margin-top: 0;
 }
 

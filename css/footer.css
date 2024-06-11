@@ -1,34 +1,140 @@
 footer {
-    background-color: #282828;
-    padding: 0.5rem 0;  
-    width: 100%; 
+    background-color: #f8f8f8;
+    color: #333;
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
 }
 
 .footer-content {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 0.5rem;
     display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+}
+
+.footer-section {
+    padding: 1rem;
+}
+
+.footer-section.pages {
+    flex: 1;
+}
+
+.footer-section.newsletter {
+    flex: 2;
+}
+
+.footer-section.social {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.footer-section p {
+    margin: 0.5rem 0;
+}
+
+.pages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pages ul li {
+    margin: 0.5rem 0;
+}
+
+.pages ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.pages ul li a:hover {
+    color: #cfa4fc;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
 }
 
-footer p { 
-    color: #FFFFFF; 
-    margin: 0;
-    text-align: center;
+.newsletter input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
 }
 
-.linkedin {
-    width: 20px; 
-    height: 20px;
-    vertical-align: middle;
-    margin-top: -4px;
-    margin-left: 4px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.newsletter button {
+    padding: 0.5rem;
+    background-color: #cfa4fc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.linkedin:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.newsletter button:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .footer-section.newsletter {
+        order: -1;
+        width: 95%;
+    }
+
+    .footer-section.pages {
+        width: 30%;
+        padding-left: 1rem;
+        text-align: left;
+        
+    }
+
+    .footer-section.social {
+        width: 40%;
+        padding-left: 1rem;
+    }
 }
