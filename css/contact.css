@@ -1,7 +1,3 @@
-#contact-form label {
-    font-weight: bold;
-}
-
 #contact-form input[name="name"],
 #contact-form input[name="email"] {
     width: calc(50% - 0.5rem);
