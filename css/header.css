@@ -43,4 +43,5 @@ nav ul li a {
 nav ul li a:hover {
     transform: translateY(-3px);
     color: #cfa4fc;
+    text-decoration: none;
 }
