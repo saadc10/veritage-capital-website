@@ -15,7 +15,7 @@
 
 .report:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 10px #d9b5ff;
+  box-shadow: 0 5px 10px #cfa4fc;
 }
 
 .report a {
