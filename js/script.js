@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
   loadComponent("header.html", "#header");
   loadComponent("footer.html", "#footer");
+  loadComponent("footer-mobile.html", "#footer-mobile");
 
   function loadComponent(url, selector) {
       fetch(url)
           .then(response => response.text())
           .then(data => {
               document.querySelector(selector).innerHTML = data;
-              if (selector === "#footer") {
+              if (selector === "#footer" || selector === "#footer-mobile") {
                   setupNewsletterForm();
               }
           })
