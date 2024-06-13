@@ -50,7 +50,7 @@
     color: #f8f8f8;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     #contact-form {
         grid-template-columns: 1fr;
     }

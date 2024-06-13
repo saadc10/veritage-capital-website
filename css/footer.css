@@ -159,6 +159,6 @@ footer {
 
     .footer-mobile {
         display: flex;
-        justify-content: space-around; /* Distribute space around the items */
+        justify-content: space-around;
     }
 }
