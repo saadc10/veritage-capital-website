@@ -33,6 +33,10 @@ footer {
     align-items: flex-start;
 }
 
+.copyright {
+    margin: 0 !important;
+}
+
 .footer-section h4 {
     margin-bottom: 0.5rem;
     font-weight: bold;
