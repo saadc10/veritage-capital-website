@@ -136,6 +136,7 @@ footer {
 
     .footer-mobile {
         display: flex !important;
+        justify-content: space-around;
     }
 
     .footer-content {
@@ -159,10 +160,5 @@ footer {
     .footer-section.social {
         width: 50%;
         padding-left:6rem;
-    }
-
-    .footer-mobile {
-        display: flex;
-        justify-content: space-around;
     }
 }
