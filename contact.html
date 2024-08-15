@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Veritage Capital</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <title>Veritage Capital - Contact</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/contact.css"> 
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <div id="header"></div>
+    <div id="header-mobile"></div>
 
     <main>
-        <h1>Contact Us</h1>
-        <p>Have a question or want to learn more about our investment opportunities? Don't hesitate to reach out to us using the form below.</p>
+        <div class="container">
+            <h1 class="fading">Get in Touch With Us</h1>
+            <p>Whether you have questions, want to collaborate, or are interested in joining our team, we’re just a message away. <strong>We value communication</strong> and look forward to hearing from you.</p>
+            
+            <h3 class="fading">Reach Out Directly</h3>
+            <p>If you have specific inquiries or need more information, feel free to drop us an email. <strong>We’re here to help</strong> and answer any questions you may have.</p>
+            <p>Email: <a href="mailto:contact@veritagecapital.com">contact@veritagecapital.com</a></p>
 
-        <form id="contact-form">
-            <input type="text" id="name" name="name" placeholder="Name" required><br><br>
-            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
-            <input type="text" id="subject" name="subject" placeholder="Subject" required><br><br>
-            <textarea id="message" name="message" placeholder="Message" required></textarea><br><br>
-            <button type="submit">Send Message</button>
-        </form>
+            <h3 class="fading">Join Our Team</h3>
+            <p>Interested in becoming part of Veritage Capital? <strong>We’re always on the lookout for talented individuals</strong> to join our dynamic team. Submit your details, and we’ll get in touch. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjCYoUvQMLFeORDCyoNpX_Y40qStHWU2DgjYDTq12NcQcDaQ/viewform">Sign up here.</p>
 
-        <div id="message-sent" style="display: none;">
-            <h3>Message Sent!</h3>
-            <p>Thank you for your message. We will get back to you soon.</p>
-        </div>
+        </div>   
     </main>
 
     <div id="footer"></div>
-    <div id="footer-mobile"></div>
-    
+
     <script src="js/script.js"></script>
 </body>
 </html>

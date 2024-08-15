@@ -1,164 +1,47 @@
 footer {
-    background-color: #f8f8f8;
-    color: #333;
-    width: 100%;
-    padding: 0.75rem 0;
-    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #000000;
 }
 
 .footer-content {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15%;
-}
-
-.footer-section {
-    padding: 1rem;
-}
-
-.footer-section.pages {
-    flex: 1;
-}
-
-.footer-section.newsletter {
-    flex: 2;
-}
-
-.footer-section.social {
-    padding-left: 100px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-
-.copyright {
-    margin: 0 !important;
-}
-
-.footer-section h4 {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.footer-section p {
-    margin: 0.5rem 0;
-}
-
-.pages ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.pages ul li {
-    margin: 0.5rem 0;
-}
-
-.pages ul li a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.pages ul li a:hover {
-    color: #cfa4fc;
-}
-
-.newsletter form {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: center;
 }
 
-.newsletter input[type="email"] {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    flex: 1;
+.linkedin-icon {
+    width: 35px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease, filter 0.4s ease;
+    filter: brightness(0.5);
 }
 
-.newsletter button {
-    padding: 0.5rem;
-    background-color: #cfa4fc;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.newsletter button:hover {
-    background-color: #333;
-    color: #f8f8f8;
-}
-
-.social-icons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 1rem;
-}
-
-.social-icons a {
-    display: inline-block;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a:hover img {
+.linkedin-icon:hover {
+    filter: brightness(1);
     transform: scale(1.1);
 }
 
-.hidden {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .footer-desktop {
-        display: flex !important;
-    }
-
-    .footer-mobile {
-        display: none !important;
-    }
+.copyright {
+    font-size: 0.725em;
+    color: #e3e3e3;
+    opacity: 0.4;
+    margin: 14px 0 0 0;
 }
 
 @media (max-width: 768px) {
-
-    .footer-desktop {
-        display: none !important;
+    footer {
+        margin-top: 10px;
     }
 
-    .footer-mobile {
-        display: flex !important;
-        justify-content: space-around;
+    .linkedin-icon {
+        width: 25px;
     }
 
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        padding: 0 1rem;
-    }
-
-    .footer-section.newsletter {
-        width: 95%;
-        padding-bottom: 0;
-    }
-
-    .footer-section.pages {
-        width: 30%;
-        padding-left: 1rem;
-        text-align: left;
-        
-    }
-
-    .footer-section.social {
-        width: 50%;
-        padding-left:6rem;
+    .copyright {
+        font-size: 0.65em;
     }
 }
