@@ -34,4 +34,4 @@ This is the website for Veritage Capital, a student-run investment fund. It show
     ```bash
     live-server
     ```
-    Or open the `index.html` file in your web browser directly.
+    Or open the `index` file in your web browser directly.
