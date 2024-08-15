@@ -76,6 +76,10 @@ p span.fading {
     font-weight: 500;
 }
 
+p.italic {
+    font-style: italic;
+}
+
 p span.italic {
     font-style: italic;
 }

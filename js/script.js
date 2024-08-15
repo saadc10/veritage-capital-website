@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    loadComponent("header", "#header");
-    loadComponent("header-mobile", "#header-mobile");
-    loadComponent("footer", "#footer");
+    loadComponent("header.html", "#header");
+    loadComponent("header-mobile.html", "#header-mobile");
+    loadComponent("footer.html", "#footer");
 
     // Add event listeners for the mobile menu after the components are loaded
     document.querySelector("#header-mobile").addEventListener("load", function() {
