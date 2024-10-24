@@ -31,27 +31,11 @@ h1.fading {
 }
 
 h2 {
-    font-size: 2em;
-    font-weight: 600;
-    color: #d1d1d1;
+    font-size: 1.75em;
+    font-weight: 500;
 }
 
 h2.fading {
-    background: linear-gradient(to right, #e0e0e0 0%, #d2a3fd 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 1.75em;
-    font-weight: 500;
-    color: #b3b3b3;
-}
-
-h3.fading {
     background: linear-gradient(to right, #e0e0e0 0%, #d2a3fd 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -96,6 +80,29 @@ a:hover {
     text-decoration: none;
 }
 
+.list-container {
+    display: flex;
+    justify-content: center; /* Centers the list container */
+}
+
+.two-column-list {
+    font-size: 1.1em;
+    font-weight: 500;
+    list-style-position: inside; /* Ensures bullet points are aligned with the text */
+    list-style-type: disc; /* Adds bullet points */
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Splits into 2 equal columns */
+    column-gap: 100px; /* Keeps the gap between columns */
+    row-gap: 5px; /* Reduces the gap between rows */
+    max-width: 800px; /* Adjusts width of the container, center it nicely */
+}
+
+.two-column-list li {
+    text-align: left; /* Aligns list items to the left */
+    margin-bottom: 10px; /* Adds space between items */
+}
+
 @media (max-width: 768px) {
     .container {
         width: 80%;
@@ -108,10 +115,6 @@ a:hover {
     }
 
     h2 {
-        font-size: 1.25em;
-    }
-
-    h3 {
         font-size: 1em;
     }
 
