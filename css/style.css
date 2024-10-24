@@ -82,36 +82,35 @@ a:hover {
 
 .list-container {
     display: flex;
-    justify-content: center; /* Centers the list container */
+    justify-content: center;
 }
 
 .two-column-list {
     font-size: 1.1em;
-    font-weight: 500;
-    list-style-position: inside; /* Ensures bullet points are aligned with the text */
-    list-style-type: disc; /* Adds bullet points */
+    list-style-position: inside;
+    list-style-type: disc;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Splits into 2 equal columns */
-    column-gap: 100px; /* Keeps the gap between columns */
-    row-gap: 5px; /* Reduces the gap between rows */
-    max-width: 800px; /* Adjusts width of the container, center it nicely */
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 5px;
+    max-width: 800px;
 }
 
 .two-column-list li {
-    text-align: left; /* Aligns list items to the left */
-    margin-bottom: 10px; /* Adds space between items */
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
     .container {
         width: 80%;
-        padding: 15px; /* Optional: Reduce padding for a better fit */
+        padding: 15px;
         text-align: center;
     }
 
     h1 {
-        font-size: 1.5em; /* Adjust font sizes for better readability */
+        font-size: 1.5em;
     }
 
     h2 {
@@ -120,5 +119,11 @@ a:hover {
 
     p {
         font-size: 0.825em;
+    }
+
+    .two-column-list {
+        font-size: 0.7em;
+        column-gap: 25px;
+        row-gap: 0px;
     }
 }
